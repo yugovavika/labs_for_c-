@@ -221,11 +221,6 @@ x=8 y=-1 z=4
 4. Возвращаем max.
 
 ### Тестирование
-<img width="298" height="262" alt="2026-09-30_23-54-12" src="https://github.com/user-attachments/assets/35ccc019-7462-454f-ba83-dc57204111db" />
-<img width="337" height="245" alt="2026-09-30_23-53-24" src="https://github.com/user-attachments/assets/f1ef707e-c6a1-4835-90a8-fc689483e5c9" />
-<img width="341" height="253" alt="2026-09-30_23-53-39" src="https://github.com/user-attachments/assets/c26784e9-f500-453a-92e3-975486821bf1" />
-<img width="305" height="245" alt="2026-09-30_23-53-55" src="https://github.com/user-attachments/assets/4f9dbec2-c404-44d7-963f-bc3ff241673f" />
-
 <img width="417" height="299" alt="2026-09-30_23-50-23" src="https://github.com/user-attachments/assets/b1eb79e0-bb41-4465-9c7a-9286dc561db4" />
 <img width="333" height="304" alt="2026-09-30_23-51-14" src="https://github.com/user-attachments/assets/a0a0e01d-48e0-4be4-a1f6-e3b83fba8d81" />
 <img width="371" height="303" alt="2026-09-30_23-50-47" src="https://github.com/user-attachments/assets/0c2511cb-d4bb-4412-8047-88617a42b17f" />
