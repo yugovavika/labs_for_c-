@@ -1,2 +1,479 @@
-# labs_for_c-
-лабораторные по C#
+# Югова Виктория Максимовна ЛА2 Лабораторная №1
+
+# Задание 1
+
+## Задача 1
+
+### Текст задачи
+
+Дробная часть. Дана сигнатура метода: public double fraction(double x);
+Необходимо реализовать метод таким образом, чтобы он возвращал только
+дробную часть числа x. Подсказка: вещественное число может быть
+преобразовано к целому путем отбрасывания дробной части.
+
+Пример: x = 5,25 → результат: 0,25
+
+### Алгоритм решения
+
+1. Приводим вещественное число x к целому типу int — при этом дробная
+   часть отбрасывается.
+2. Вычитаем полученное целое значение из исходного x.
+3. Возвращаем результат — это и есть дробная часть.
+
+### Тестирование
+
+<img width="1477" height="259" alt="2026-09-30_23-26-15" src="https://github.com/user-attachments/assets/900844ad-7148-4efd-a9c1-5c2496a98b7c" />
+<img width="1482" height="250" alt="2026-09-30_23-25-22" src="https://github.com/user-attachments/assets/0365783a-2dbd-48a1-b2d4-176a66fa5dc0" />
+<img width="1477" height="300" alt="2026-09-30_23-23-54" src="https://github.com/user-attachments/assets/0f247622-8414-463c-84d3-e0a3f531fad1" />
+
+
+## Задача 3
+
+### Текст задачи
+
+Букву в число. Дана сигнатура метода: public int charToNum(char x);
+Метод принимает символ x, который представляет собой один из
+«0 1 2 3 4 5 6 7 8 9». Необходимо преобразовать символ в соответствующее
+число. Подсказка: код символа ‘0’ — это число 48.
+
+Пример: x = '3' → результат: 3
+
+### Алгоритм решения
+
+1. Символ в кодировке ASCII/Unicode хранится как число.
+2. Символ '0' имеет код 48, '1' — 49, ..., '9' — 57.
+3. Вычитаем из кода символа 48 — получаем соответствующую цифру.
+
+### Тестирование
+<img width="1468" height="228" alt="2026-09-30_23-29-47" src="https://github.com/user-attachments/assets/8c0475aa-d43b-4db9-bcb1-44d9968a5d71" />
+<img width="1480" height="219" alt="2026-09-30_23-29-32" src="https://github.com/user-attachments/assets/720c6d5c-c395-42ee-abaa-c4850b5a59e9" />
+<img width="1474" height="353" alt="2026-09-30_23-29-08" src="https://github.com/user-attachments/assets/3fe0a157-a60f-4482-9adf-a3385b05b12c" />
+
+
+## Задача 5
+
+### Текст задачи
+
+Двузначное. Дана сигнатура метода: public bool is2Digits(int x);
+Метод принимает число x и возвращает true, если оно двузначное.
+
+Пример 1: x = 32 → true
+Пример 2: x = 516 → false
+
+### Алгоритм решения
+
+1. Берём модуль числа, чтобы корректно обрабатывать отрицательные.
+2. Проверяем, что модуль лежит в диапазоне от 10 до 99 включительно.
+3. Возвращаем результат проверки.
+
+### Тестирование
+
+<img width="1462" height="207" alt="2026-09-30_23-35-23" src="https://github.com/user-attachments/assets/55bd8adc-8bb4-4525-a559-0c0eed0ac21a" />
+<img width="1468" height="265" alt="2026-09-30_23-35-08" src="https://github.com/user-attachments/assets/168f8f25-8d13-4ccd-b2ec-8f6768a7978d" />
+<img width="1473" height="273" alt="2026-09-30_23-34-44" src="https://github.com/user-attachments/assets/bc3a1281-4468-479e-9364-b8eb97fcc6ee" />
+<img width="1469" height="298" alt="2026-09-30_23-34-20" src="https://github.com/user-attachments/assets/81eeb736-1f21-4baf-bfc2-f72c82d5d925" />
+
+## Задача 7
+
+### Текст задачи
+
+Диапазон. Дана сигнатура метода: public bool isInRange(int a, int b, int num);
+Метод принимает левую и правую границу (a и b) числового диапазона.
+Возвращает true, если num входит в указанный диапазон (включая границы).
+Отношение a и b заранее неизвестно.
+
+Пример 1: a = 5, b = 1, num = 3 → true
+Пример 2: a = 2, b = 15, num = 33 → false
+
+### Алгоритм решения
+
+1. Находим минимум из a и b — это левая граница диапазона.
+2. Находим максимум из a и b — это правая граница диапазона.
+3. Проверяем, что num >= min и num <= max.
+4. Возвращаем результат.
+
+### Тестирование
+
+<img width="479" height="306" alt="2026-09-30_23-38-24" src="https://github.com/user-attachments/assets/2d165d89-cfb3-4a32-9782-fe0fce31043d" />
+<img width="462" height="310" alt="2026-09-30_23-38-47" src="https://github.com/user-attachments/assets/8023052f-7c94-4379-969a-63e73982222a" />
+<img width="390" height="299" alt="2026-09-30_23-39-17" src="https://github.com/user-attachments/assets/0e574b8b-3d16-493d-b261-5f966aa706f5" />
+<img width="467" height="311" alt="2026-09-30_23-39-40" src="https://github.com/user-attachments/assets/ba29009e-dbbe-4704-90c2-279c3e92fcee" />
+
+
+## Задача 9
+
+### Текст задачи
+
+Равенство. Дана сигнатура метода: public bool isEqual(int a, int b, int c);
+Метод возвращает true, если все три полученных числа равны.
+
+Пример 1: a = 3, b = 3, c = 3 → true
+Пример 2: a = 2, b = 15, c = 2 → false
+
+### Алгоритм решения
+
+1. Проверяем равенство a == b и b == c одновременно.
+2. Если оба условия истинны — все три числа равны, возвращаем true.
+3. Иначе возвращаем false.
+
+### Тестирование
+
+<img width="353" height="290" alt="2026-09-30_23-41-49" src="https://github.com/user-attachments/assets/79df7142-1404-4ad2-ad10-c810517486ad" />
+<img width="403" height="306" alt="2026-09-30_23-42-11" src="https://github.com/user-attachments/assets/b13cfa69-3412-421f-8c80-8da087fd075a" />
+<img width="408" height="295" alt="2026-09-30_23-42-26" src="https://github.com/user-attachments/assets/382e0401-27cb-4263-a6e2-ff9350ef505a" />
+
+
+# Задание 2
+
+## Задача 1
+
+### Текст задачи
+
+Модуль числа. Дана сигнатура метода: public int abs(int x);
+Метод возвращает модуль числа x.
+
+Пример 1: x = 5 → 5
+Пример 2: x = -3 → 3
+
+### Алгоритм решения
+
+1. Если x < 0, возвращаем -x.
+2. Иначе возвращаем x без изменений.
+
+### Тестирование
+<img width="379" height="221" alt="2026-09-30_23-44-50" src="https://github.com/user-attachments/assets/e3981534-455d-4231-b055-2d03414ed674" />
+<img width="426" height="263" alt="2026-09-30_23-44-13" src="https://github.com/user-attachments/assets/b2007ad4-7ce9-48e4-93a9-2d071fef8d80" />
+<img width="454" height="215" alt="2026-09-30_23-44-38" src="https://github.com/user-attachments/assets/bfcd8c07-86cf-4cd0-bf86-059817ee01a4" />
+
+## Задача 3
+
+### Текст задачи
+
+Тридцать пять. Дана сигнатура метода: public bool is35(int x);
+Метод возвращает true, если число x делится нацело на 3 или 5.
+Если оно делится и на 3, и на 5 — вернуть false.
+
+Пример 1: x = 5 → true
+Пример 2: x = 8 → false
+Пример 3: x = 15 → false
+
+### Алгоритм решения
+
+1. Если x % 3 == 0 и x % 5 == 0 — возвращаем false.
+2. Иначе если x % 3 == 0 или x % 5 == 0 — возвращаем true.
+3. Иначе возвращаем false.
+
+### Тестирование
+
+<img width="428" height="247" alt="2026-09-30_23-46-58" src="https://github.com/user-attachments/assets/01cf040b-9a8b-48de-8548-655ca390e896" />
+<img width="347" height="228" alt="2026-09-30_23-48-12" src="https://github.com/user-attachments/assets/1d7f74b6-5c46-4c4b-8931-b2d892058939" />
+<img width="382" height="237" alt="2026-09-30_23-47-59" src="https://github.com/user-attachments/assets/5ac535d3-fc59-404e-b6fc-5373228c787c" />
+<img width="369" height="228" alt="2026-09-30_23-47-28" src="https://github.com/user-attachments/assets/a66ecbd1-103c-46ea-bfd3-b87b667fdd4c" />
+<img width="349" height="215" alt="2026-09-30_23-47-14" src="https://github.com/user-attachments/assets/38811122-59aa-4833-9bd3-8cad056b7ed9" />
+
+## Задача 5
+
+### Текст задачи
+
+Тройной максимум. Дана сигнатура метода: public int max3(int x, int y, int z);
+Метод возвращает максимальное из трёх чисел.
+
+Пример 1: x = 5, y = 7, z = 7 → 7
+Пример 2: x = 8, y = -1, z = 4 → 8
+
+### Алгоритм решения
+
+1. Принимаем за максимум первое число max = x.
+2. Если y > max, обновляем max = y.
+3. Если z > max, обновляем max = z.
+4. Возвращаем max.
+
+### Тестирование<img width="298" height="262" alt="2026-09-30_23-54-12" src="https://github.com/user-attachments/assets/35ccc019-7462-454f-ba83-dc57204111db" />
+<img width="337" height="245" alt="2026-09-30_23-53-24" src="https://github.com/user-attachments/assets/f1ef707e-c6a1-4835-90a8-fc689483e5c9" />
+<img width="341" height="253" alt="2026-09-30_23-53-39" src="https://github.com/user-attachments/assets/c26784e9-f500-453a-92e3-975486821bf1" />
+<img width="305" height="245" alt="2026-09-30_23-53-55" src="https://github.com/user-attachments/assets/4f9dbec2-c404-44d7-963f-bc3ff241673f" />
+
+<img width="417" height="299" alt="2026-09-30_23-50-23" src="https://github.com/user-attachments/assets/b1eb79e0-bb41-4465-9c7a-9286dc561db4" />
+<img width="333" height="304" alt="2026-09-30_23-51-14" src="https://github.com/user-attachments/assets/a0a0e01d-48e0-4be4-a1f6-e3b83fba8d81" />
+<img width="371" height="303" alt="2026-09-30_23-50-47" src="https://github.com/user-attachments/assets/0c2511cb-d4bb-4412-8047-88617a42b17f" />
+
+## Задача 7
+
+### Текст задачи
+
+Двойная сумма. Дана сигнатура метода: public int sum2(int x, int y);
+Метод возвращает сумму чисел x и y. Если сумма попадает в диапазон
+от 10 до 19 — вернуть 20.
+
+Пример 1: x = 5, y = 7 → 20
+Пример 2: x = 8, y = -1 → 7
+
+### Алгоритм решения
+
+1. Вычисляем sum = x + y.
+2. Если sum >= 10 и sum <= 19, возвращаем 20.
+3. Иначе возвращаем sum.
+
+### Тестирование
+
+<img width="337" height="245" alt="2026-09-30_23-53-24" src="https://github.com/user-attachments/assets/a53c0910-58d4-41fb-80aa-0b0136710362" />
+<img width="341" height="253" alt="2026-09-30_23-53-39" src="https://github.com/user-attachments/assets/7206cad0-61d9-49ad-91ae-96857a828b36" />
+<img width="305" height="245" alt="2026-09-30_23-53-55" src="https://github.com/user-attachments/assets/b5400f24-c09c-4a1d-8880-a88f2a7996b1" />
+<img width="298" height="262" alt="2026-09-30_23-54-12" src="https://github.com/user-attachments/assets/406b28dd-86b9-4faf-9372-03d24cc8daaf" />
+
+
+## Задача 9
+
+### Текст задачи
+
+День недели. Дана сигнатура метода: public String day(int x);
+Метод принимает число x, обозначающее день недели (1 — понедельник,
+7 — воскресенье). Если число не от 1 до 7 — вернуть «это не день недели».
+Вместо if использовать switch.
+
+Пример: x = 5 → «пятница»
+
+### Алгоритм решения
+
+1. Используем конструкцию switch (x).
+2. Для каждого значения от 1 до 7 возвращаем соответствующее название дня.
+3. В default возвращаем «это не день недели».
+
+### Тестирование
+<img width="490" height="194" alt="2026-09-30_23-58-03" src="https://github.com/user-attachments/assets/af774e94-0dd4-4d32-aba6-2df0379803c1" />
+<img width="535" height="220" alt="2026-09-30_23-56-57" src="https://github.com/user-attachments/assets/634df1ce-9cd3-4ce2-ab15-c472f19ae77b" />
+<img width="497" height="237" alt="2026-09-30_23-57-24" src="https://github.com/user-attachments/assets/3799d201-fa0c-4996-a999-10992a5852a1" />
+<img width="494" height="205" alt="2026-09-30_23-57-37" src="https://github.com/user-attachments/assets/24d02e8c-668f-428a-b616-19038feadab4" />
+
+# Задание 3
+
+## Задача 1
+
+### Текст задачи
+
+Числа подряд. Дана сигнатура метода: public String listNums(int x);
+Метод возвращает строку со всеми числами от 0 до x включительно.
+
+Пример: x = 5 → «0 1 2 3 4 5»
+
+### Алгоритм решения
+
+1. Создаём массив mas размером x + 1.
+2. Заполняем его числами от 0 до x в цикле for.
+3. Объединяем элементы массива в строку через пробел с помощью
+   string.Join(" ", mas).
+
+### Тестирование
+
+<img width="507" height="231" alt="2026-09-30_23-59-53" src="https://github.com/user-attachments/assets/50b368d5-c227-47af-b000-c410d22162db" />
+<img width="488" height="232" alt="2026-09-30_23-59-36" src="https://github.com/user-attachments/assets/2969261e-2e04-4955-8ee9-ae444526bbe9" />
+<img width="554" height="124" alt="2026-10-01_00-00-10" src="https://github.com/user-attachments/assets/4a0eb986-6fc0-407f-9196-be9df5ca4948" />
+
+
+## Задача 3
+
+### Текст задачи
+
+Чётные числа. Дана сигнатура метода: public String chet(int x);
+Метод возвращает строку со всеми чётными числами от 0 до x включительно.
+Инструкцию if использовать не следует.
+
+Пример: x = 9 → «0 2 4 6 8»
+
+### Алгоритм решения
+
+1. Вычисляем количество чётных чисел: count = x / 2 + 1.
+2. Создаём массив mas размером count.
+3. В цикле for (i = 0; i <= x; i += 2) заполняем массив чётными числами.
+4. Объединяем элементы массива в строку через пробел.
+
+### Тестирование
+
+<img width="509" height="199" alt="2026-10-01_00-01-56" src="https://github.com/user-attachments/assets/10ac8474-a275-403b-9dd5-f2e979e5d2dc" />
+<img width="489" height="202" alt="2026-10-01_00-01-43" src="https://github.com/user-attachments/assets/e773f187-c041-435c-85d8-ca47b260ca8d" />
+<img width="569" height="288" alt="2026-10-01_00-01-32" src="https://github.com/user-attachments/assets/8c6ad459-9c56-4fec-99df-bf9d8d17ea83" />
+
+## Задача 5
+
+### Текст задачи
+
+Длина числа. Дана сигнатура метода: public int numLen(long x);
+Метод возвращает количество знаков в числе x.
+
+Пример: x = 12567 → 5
+
+### Алгоритм решения
+
+1. Если x < 0, берём модуль.
+2. Если x == 0, возвращаем 1.
+3. В цикле while (x > 0) делим число на 10 и увеличиваем счётчик.
+4. Возвращаем счётчик.
+
+### Тестирование
+
+<img width="361" height="198" alt="2026-10-01_00-04-09" src="https://github.com/user-attachments/assets/892cc474-8657-48a3-9a14-9ccdbfdcf176" />
+<img width="338" height="197" alt="2026-10-01_00-04-55" src="https://github.com/user-attachments/assets/42fd1173-6374-4334-8896-bb52fb41bb2b" />
+<img width="338" height="230" alt="2026-10-01_00-04-35" src="https://github.com/user-attachments/assets/60805809-77ea-4dc6-af95-e046f471dd8e" />
+<img width="327" height="214" alt="2026-10-01_00-04-20" src="https://github.com/user-attachments/assets/de7820b4-460c-42c5-ac24-5d3ef2ec1c37" />
+
+
+## Задача 7
+
+### Текст задачи
+
+Квадрат. Дана сигнатура метода: public void square(int x);
+Метод выводит на экран квадрат из символов ‘*’ размером x на x.
+
+Пример: x = 2 →
+**
+**
+
+### Алгоритм решения
+
+1. Внешний цикл for (i = 0; i < x; i++) отвечает за высоту.
+2. Внутренний цикл for (j = 0; j < x; j++) выводит x символов '*'.
+3. После внутреннего цикла — Console.WriteLine() для перехода на новую строку.
+
+### Тестирование
+<img width="562" height="277" alt="2026-10-01_00-05-53" src="https://github.com/user-attachments/assets/1f2e8112-a99b-43e6-ae16-36295ba2769b" />
+<img width="535" height="182" alt="2026-10-01_00-06-27" src="https://github.com/user-attachments/assets/d1466804-095f-46e4-9235-d399af05071a" />
+<img width="562" height="308" alt="2026-10-01_00-06-09" src="https://github.com/user-attachments/assets/252ca10a-5ab8-48d6-bcd2-cdf72c4d0b72" />
+
+
+## Задача 9
+
+### Текст задачи
+
+Правый треугольник. Дана сигнатура метода: public void rightTriangle(int x);
+Метод выводит треугольник из ‘*’ высотой x, выровненный по правому краю.
+
+Пример: x = 3 →
+  *
+ **
+***
+
+### Алгоритм решения
+
+1. Внешний цикл for (i = 1; i <= x; i++).
+2. Первый внутренний цикл выводит x - i пробелов.
+3. Второй внутренний цикл выводит i символов '*'.
+4. Переход на новую строку.
+
+### Тестирование
+<img width="505" height="304" alt="2026-10-01_00-07-32" src="https://github.com/user-attachments/assets/8cb83cc9-0fe9-4601-b231-9b86f821bc9f" />
+<img width="537" height="163" alt="2026-10-01_00-08-11" src="https://github.com/user-attachments/assets/29e8217e-a199-4474-b083-5484c99d10cd" />
+<img width="488" height="287" alt="2026-10-01_00-07-45" src="https://github.com/user-attachments/assets/f7515613-98a5-47c3-b4a2-3124b26e8ae8" />
+
+
+# Задание 4
+
+## Задача 1
+
+### Текст задачи
+
+Поиск первого значения. Дана сигнатура метода:
+public int findFirst(int[] arr, int x);
+Метод возвращает индекс первого вхождения числа x в массив arr.
+Если число не входит — возвращается -1.
+
+Пример: arr = [1,2,3,4,2,2,5], x = 2 → 1
+
+### Алгоритм решения
+
+1. Проходим по массиву в цикле for.
+2. Если arr[i] == x, возвращаем i.
+3. Если цикл завершён без совпадений — возвращаем -1.
+
+### Тестирование
+<img width="578" height="208" alt="2026-10-01_00-10-03" src="https://github.com/user-attachments/assets/7743db6c-f4ec-490d-bae2-bfe19d3a606d" />
+<img width="628" height="235" alt="2026-10-01_00-09-50" src="https://github.com/user-attachments/assets/564159d8-ad93-490e-8cd9-a6ee315d90b1" />
+<img width="596" height="264" alt="2026-10-01_00-09-35" src="https://github.com/user-attachments/assets/848c13c1-dd94-41cf-8c12-519012ed4a12" />
+
+
+## Задача 3
+
+### Текст задачи
+
+Поиск максимального. Дана сигнатура метода: public int maxAbs(int[] arr);
+Метод возвращает наибольшее по модулю значение массива arr.
+
+Пример: arr = [1,-2,-7,4,2,2,5] → -7
+
+### Алгоритм решения
+
+1. Принимаем за максимум первый элемент массива.
+2. Проходим по массиву, начиная со второго элемента.
+3. Если Math.Abs(arr[i]) > Math.Abs(max), обновляем max.
+4. Возвращаем max (само значение, а не модуль).
+
+### Тестирование
+<img width="605" height="194" alt="2026-10-01_00-11-21" src="https://github.com/user-attachments/assets/11a53281-8e9e-4a93-8c34-54271541fd59" />
+
+
+## Задача 5
+
+### Текст задачи
+
+Добавление массива в массив. Дана сигнатура метода:
+public int[] add(int[] arr, int[] ins, int pos);
+Метод возвращает новый массив, содержащий все элементы arr, при этом
+в позицию pos вставлены значения массива ins.
+
+Пример: arr = [1,2,3,4,5], ins = [7,8,9], pos = 3 →
+[1,2,3,7,8,9,4,5]
+
+### Алгоритм решения
+
+1. Создаём новый массив размером arr.Length + ins.Length.
+2. Копируем элементы arr до позиции pos.
+3. Вставляем элементы массива ins, начиная с позиции pos.
+4. Копируем оставшиеся элементы arr со сдвигом на ins.Length.
+5. Возвращаем новый массив.
+
+### Тестирование
+<img width="640" height="369" alt="2026-10-01_00-12-40" src="https://github.com/user-attachments/assets/ecfffd3b-07f0-425e-b65b-0ac4c91f9745" />
+<img width="588" height="273" alt="2026-10-01_00-13-10" src="https://github.com/user-attachments/assets/d241d93d-98c3-4ba1-bed6-c6d5f79e2ea6" />
+<img width="575" height="274" alt="2026-10-01_00-12-54" src="https://github.com/user-attachments/assets/3b7954a4-5791-4a9c-98b7-64f50257c343" />
+
+
+## Задача 7
+
+### Текст задачи
+
+Возвратный реверс. Дана сигнатура метода:
+public int[] reverseBack(int[] arr);
+Метод возвращает новый массив, в котором значения arr записаны задом наперёд.
+
+Пример: arr = [1,2,3,4,5] → [5,4,3,2,1]
+
+### Алгоритм решения
+
+1. Создаём новый массив rev той же длины.
+2. В цикле for присваиваем rev[arr.Length - 1 - i] = arr[i].
+3. Возвращаем rev.
+
+### Тестирование
+<img width="474" height="187" alt="2026-10-01_00-14-07" src="https://github.com/user-attachments/assets/9297814a-d688-4bd4-b784-e99df9bd6404" />
+
+
+## Задача 9
+
+### Текст задачи
+
+Все вхождения. Дана сигнатура метода: public int[] findAll(int[] arr, int x);
+Метод возвращает новый массив с индексами всех вхождений числа x в arr.
+
+Пример: arr = [1,2,3,8,2,2,9], x = 2 → [1,4,5]
+
+### Алгоритм решения
+
+1. Первым проходом по массиву считаем количество вхождений count.
+2. Создаём массив indexes размером count.
+3. Вторым проходом заполняем массив индексами совпадений.
+4. Возвращаем indexes.
+
+### Тестирование
+<img width="552" height="252" alt="2026-10-01_00-15-19" src="https://github.com/user-attachments/assets/dbe00c9d-78b0-4e07-9e10-0ab39fb2bdfe" />
+<img width="516" height="232" alt="2026-10-01_00-15-44" src="https://github.com/user-attachments/assets/c6ac44c1-42eb-40d9-ad6f-d69de4d13344" />
+<img width="523" height="203" alt="2026-10-01_00-15-32" src="https://github.com/user-attachments/assets/2c3f6ade-dc15-42dc-b4bd-35357ae93c17" />
+
